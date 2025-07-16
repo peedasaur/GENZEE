@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "GENZEE",
+  "version": "1.0",
+  "description": "lingagulligulli",
+  "permissions": ["activeTab", "scripting"],
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/*.jpg",
+        "images/*.jpeg",
+        "images/*.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
